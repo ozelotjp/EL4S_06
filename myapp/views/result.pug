@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .card.mt-3
+    .card-img.top
+      img.img-fluid(src='/images/image.jpg')
+  each x in [0, 1, 2, 3, 4, 6, 8, 10, 12, 14, 16]
+    .card.mt-1
+      .card-img.top
+        img.img-fluid(src=`/images/output_${x}.jpg`)

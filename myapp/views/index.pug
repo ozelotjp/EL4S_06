@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .alert.alert-info.mt-3 ファイルを選択してください
+  form(action="result", method="post" enctype="multipart/form-data")
+    .custom-file
+      input.custom-file-input(type='file', name='image', id='imageField')
+      label.custom-file-label(for='imageField') ファイルが選択されていません
+    button.btn.btn-primary.mt-3(type="submit") 画像を変換する
